@@ -1,0 +1,7 @@
+(executable
+ (public_name ppx_demo)
+ (name main)
+ (libraries ppx_demo)
+ ; added to allow ppx preprocessing 
+ (preprocess (pps ppx_deriving.show))
+)
